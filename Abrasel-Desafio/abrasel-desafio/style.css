@@ -1,0 +1,106 @@
+body {
+    max-width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+    background-image: url(src/fundo\ site\ renda.webp);
+
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 160px;
+}
+
+#form {
+    background-color: #39473d;
+    opacity: 0.9;
+    padding: 40px;
+    max-height: max-content;
+    width: 400px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#section {
+    background-color: #394773;
+    max-height: max-content;
+    opacity: 0.9;
+    padding: 40px;
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+}
+
+label {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+.input {
+    border: none;
+    width: 300px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.text-area {
+    width: 400px;
+    border: none;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 160px;
+
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+button[disabled] {
+    opacity: 0.8;
+}
+
+
+.error {
+    background-color: red;
+    padding: 5px;
+    color: white;
+    display: none;
+    width: 295px;
+    margin-bottom: 10px;
+}
+
+.hide {
+    display: none;
+}

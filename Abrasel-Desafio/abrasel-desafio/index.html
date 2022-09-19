@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="flex-box" id="flex-box">
+        <form id="form">
+            <div class="title">Calcular Renda Per Capita</div>
+
+        
+                <div><label>Nome</label></div>
+                <input class="input" id='name' type="text" value='' placeholder='Seu nome' />
+           
+                <div><label>CEP</label></div>
+                <input class="input" id='cep' type="text" placeholder='10101-010' onblur="onBlurCep()" />
+                <div class="error" id="cep-null-error">Cep é obrigatório!</div>
+                <div class="error" id="cep-invalid-error">Cep inálido!</div>
+
+          
+        
+                <div><label>Renda Mensal</label></div>
+                <input class="input" id='income' type="number" value='' placeholder='2000' onblur="onBlurIncome()" />
+                <div class="error" id="income-null-error">A renda é obrigatória!</div>
+                <div class="error" id="income-invalid-error">A renda deve ser um valor maior que zero!</div>
+            
+
+                <div><label>Número de Dependentes</label></div>
+                <input class="input" id='dependents' type="number" value='' placeholder='2' onblur="onBlurDependents()" />
+                <div class="error" id="dependents-null-error">O número de dependentes é obrigatório!</div>
+                <div class="error" id="dependents-invalid-error">O número de dependentes deve ser um valor maior que zero!</div>
+         
+            <div>
+                <button class="button" id="action-btn" disabled="true" onclick="printResult(event)">Calcular</button>
+            </div>
+        </form>
+
+        <section class="hide" id="section">
+            <div class="title">Resultado</div>
+
+            <div>
+                <div><label>Nome: </label></div>
+                <textarea class="text-area" id='name-area' readonly></textarea>
+            </div>
+            <div>
+                <div><label>CEP: </label></div>
+                <textarea class="text-area" id="address-area" readonly></textarea>
+            </div>
+            <div>
+                <div><label>Renda Per Capita: </label></div>
+                <textarea class="text-area" id="per-capita-income" readonly></textarea>
+            </div>
+            <div>
+                <button class="button" id="return-btn">Fechar</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+<script language="JavaScript" src='./global.js'></script>
+
+</html>
